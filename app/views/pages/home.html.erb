@@ -1,2 +1,65 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="navbar navbar-wrapper">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "urban planning {City Stories} film festival", root_path, id: "logo" %>
+       </div>
+      <div id="reveal">
+      <nav>
+        <ul class="nav navbar-nav pull-right">
+			
+			<a href="/" class="roll" id="nav-text">
+			<span data-title="Home">Home</span>
+			</a>
+			<a href="/about" class="roll" id="nav-text">
+			<span data-title="About">About</span>
+			</a>
+			<a href="/team" class="roll" id="nav-text">
+			<span data-title="Team">Team</span>
+			</a>
+			<a href="/schedule" class="roll" id="nav-text">
+			<span data-title="Schedule">Schedule</span>
+			</a>
+        </ul>
+      </nav>
+   
+   </div>
+  </div>
+</div>
+
+
+<div id="myCarousel" class="carousel slide"> 
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="http://upload.wikimedia.org/wikipedia/commons/c/c5/Green_Chicago_River_on_Saint_Patricks_Day_2009.jpg"> 
+                <img src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Green_Chicago_River_on_Saint_Patricks_Day_2009.jpg" alt="0">
+            </a>
+        </div>
+        <div class="item">
+            <a href="http://christopherwink.com/wp-content/uploads/2012/03/Philadelphia_skyline_sunset.jpg"> 
+                <img src="http://christopherwink.com/wp-content/uploads/2012/03/Philadelphia_skyline_sunset.jpg" alt="1">
+            </a>
+        </div>
+        <div class="item">
+            <a href="http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg"> <img src="http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg" alt="2">
+            </a>
+        </div>
+    </div>
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+    </div>
+<script>
+$(document).ready(function() {
+  $('.carousel').carousel();
+  $('.carousel').on('slid', function() {
+    var to_slide = $('.carousel-inner .item.active').attr('id');
+    $('.carousel-indicators').children().removeClass('active');
+    $('.carousel-indicators [data-slide-to=' + to_slide + ']').addClass('active');
+  });
+});
+</script>
