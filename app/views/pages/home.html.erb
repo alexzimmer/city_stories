@@ -1,33 +1,4 @@
-<div class="navbar navbar-wrapper">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "urban planning {City Stories} film festival", root_path, id: "logo" %>
-       </div>
-      <div id="reveal">
-      <nav>
-        <ul class="nav navbar-nav pull-right">
-			
-			<a href="/" class="roll" id="nav-text">
-			<span data-title="Home">Home</span>
-			</a>
-			<a href="/about" class="roll" id="nav-text">
-			<span data-title="About">About</span>
-			</a>
-			<a href="/team" class="roll" id="nav-text">
-			<span data-title="Team">Team</span>
-			</a>
-			<a href="/schedule" class="roll" id="nav-text">
-			<span data-title="Schedule">Schedule</span>
-			</a>
-        </ul>
-      </nav>
-   
-   </div>
-  </div>
-</div>
-
-
-<div id="myCarousel" class="carousel slide"> 
+<div id="myCarousel" class="carousel fade"> 
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -35,22 +6,20 @@
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <a href="#"> 
+            <a href=""> 
                 <img src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Green_Chicago_River_on_Saint_Patricks_Day_2009.jpg" alt="0">
             </a>
         </div>
         <div class="item">
-            <a href="#"> 
+            <a href=""> 
                 <img src="http://christopherwink.com/wp-content/uploads/2012/03/Philadelphia_skyline_sunset.jpg" alt="1">
             </a>
         </div>
         <div class="item">
-            <a href="#"> <img src="http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg" alt="2">
+            <a href=""> <img src="http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg" alt="2">
             </a>
         </div>
     </div>
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 
     </div>
 <script>
@@ -64,23 +33,22 @@ $(document).ready(function() {
 });
 </script>
 
-<div class="container hero-unit">
-		<img class="img-right" HEIGHT="300px" WIDTH="203.4px" src="http://mccallssf.com/gallery/spur-vg/mccalls_sf-spur-11.jpg" alt="2"></img>
-		<p>
+
+<div class="hero-unit">
+		<img class="img-right img-rounded" HEIGHT="300px" WIDTH="203.4px" src="http://mccallssf.com/gallery/spur-vg/mccalls_sf-spur-11.jpg" alt="2"></img>
+		
 		urban planning {City Stories} film festival is a film festival organized by urban planners from around the world in order to share their passion for the urban environment through film.  For a weekend in November you can come and enjoy, learn and discuss urban design and developement with a plethora of minds.  Films will be enjoyed in both screening and café style settings.  We welcome anyone interested, especially those looking to learn and immerse themselves in the beauty of urban planning, design, and curiousity.
 		
-	</P>
-	</div>
+</div>
 
-	<div class="container hero-unit">
-		<img class="img-left" HEIGHT="300px" WIDTH="203.4px" src="http://wfiles.brothersoft.com/h/holding_hands-1600x1200.jpg" alt="2"></img> 
+	
+	<div class="hero-unit">
+		<img class="img-left img-circle" HEIGHT="300px" WIDTH="203.4px" src="http://wfiles.brothersoft.com/h/holding_hands-1600x1200.jpg" alt="2"></img> 
 			
-<p>
 		we are lucky to work with many generous partners who are involved in many world changing projects themselves.  without them, our project and our dream to bring an urban planning film festival to San Francisco would never be possible.
 
-		
-		
-		
-	</P><div><%= link_to "Partners", partners_path, class: "right-btn btn btn-large" %>
+		<div><%= link_to "Partners", partners_path, class: "right-btn btn btn-large" %>
 		</div>
-	</div>
+</div>
+
+
