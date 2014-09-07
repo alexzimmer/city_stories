@@ -22,4 +22,7 @@ class PagesController < ApplicationController
 
   def films
   end
+
+  def resources
+  end
 end

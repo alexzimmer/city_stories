@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CityStories</title>
+  <title>SF Urban Film Fest</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<link rel="shortcut icon"
+     href="http://example.com/favicon.ico" />
 </head>
 
 <body>
 
-<div class="navbar navbar-wrapper">
+<div class="navbar navbar-wrapper drop">
 	<div id="cssmenu">
+   
+ 
   <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "urban planning {City Stories} film festival", root_path, id: "logo" %>
-       </div>
+    
+      <nav class="">
+      
+      
+        <div class="container">
+          <ul class="navbar-brand">
+		     <a href="/" class=""> 
+               <span class="ab", data-title="SF Urban Film Fest"> <%= image_tag("logo.jpg", alt: "cv")%></span>
+            </a>  
+        </div>
+<div class="navbar-brand">
       <div id="reveal">
-      <nav>
-        <ul class="nav navbar-nav pull-right">
-			
+            <a href="" class="" id="nav-text">
+      <span data-title="Team">   </span>
+      </a>
+
 			<a href="/" class="roll" id="nav-text">
 			<span data-title="Home">Home</span>
 			</a>
 			<a href="/about" class="roll" id="nav-text">
 			<span data-title="About">About</span>
 			</a>
+      
+            
 			<a href="/team" class="roll" id="nav-text">
 			<span data-title="Team">Team</span>
 			</a>
 			<a href="/schedule" class="roll" id="nav-text">
 			<span data-title="Schedule">Schedule</span>
 			</a>
+      <a href="/resources" class="roll" id="nav-text">
+      <span data-title="Resources">Resources</span>
+      </a>
         </ul>
       </nav>
    </div>
-   </div>
+   </div> 
+ </div>
   </div>
 </div>
-<%= yield %>
 
+<%= yield %>
+<div class="container">
+<footer class="footer">
+  <small>
+    <p>developed and designed by Alex Zimmer</p>
+    
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About",   about_path %></li>
+      <li><%= link_to "Contact", root_path %></li>
+      <li><%= link_to "Volunteer", root_path %></li>
+
+    </ul>
+  </nav>
+</footer>
+</div>
 </body>
 </html>
