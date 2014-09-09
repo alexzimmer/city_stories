@@ -9,6 +9,8 @@ CityStories::Application.routes.draw do
   match '/schedule',   to: 'pages#schedule',     via: 'get'
   match '/films',      to: 'pages#films',        via: 'get'
   match '/resources',      to: 'pages#resources',        via: 'get'
+  match '/tickets',      to: 'pages#tickets',        via: 'get'
+  match '/contact',      to: 'pages#contact',        via: 'get'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

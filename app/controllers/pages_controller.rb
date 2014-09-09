@@ -25,4 +25,10 @@ class PagesController < ApplicationController
 
   def resources
   end
+
+  def tickets
+  end
+
+  def contact
+  end
 end
