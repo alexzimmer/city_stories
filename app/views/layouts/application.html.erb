@@ -49,11 +49,14 @@
 			<a href="/schedule" class="roll" id="nav-text">
 			<span data-title="Schedule">Schedule</span>
 			</a>
-      <a href="/resources" class="roll" id="nav-text">
-      <span data-title="Resources">Resources</span>
-      </a>
       <a href="/tickets" class="roll" id="nav-text">
       <span data-title="Tickets">Tickets</span>
+      </a>
+      <a href="/blog" class="roll" id="nav-text">
+      <span data-title="Blog">Blog</span>
+      </a>
+      <a href="/resources" class="roll" id="nav-text">
+      <span data-title="Resources">Resources</span>
       </a>
       <a href="/contact" class="roll" id="nav-text">
       <span data-title="Contact">Contact</span>
@@ -70,12 +73,13 @@
 <div class="container">
 <footer class="footer">
   <small>
-    <p>developed and designed by Alex Zimmer</p>
+    <p>developed and designed by <a href="http://www.alexzimmer.com">Alex Zimmer</a></p>
     
   </small>
   <nav>
     <ul>
-      <li><%= link_to "About",   about_path %></li>
+      <li><%= image_tag("logo.jpg", alt: "cv")%></li>
+      <li><%= link_to "Partners",   partners_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
       <li><%= link_to "Volunteer", contact_path %></li>
 
