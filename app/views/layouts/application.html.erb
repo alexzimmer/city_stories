@@ -8,8 +8,8 @@
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="shortcut icon"
-     href="http://example.com/favicon.ico" />
+<link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
+<link rel="icon" href="images/fav.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -79,6 +79,8 @@
   <nav>
     <ul>
       <li><%= image_tag("logo.jpg", alt: "cv")%></li>
+ 
+      
       <li><%= link_to "Partners",   partners_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
       <li><%= link_to "Volunteer", contact_path %></li>

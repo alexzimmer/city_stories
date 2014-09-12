@@ -4,6 +4,10 @@
 /* = Misc = */
 /* ======================= */
 
+iframe, object, embed {
+        max-width: 100%;
+}
+
 .drop {
   margin-bottom:10px
 }
@@ -80,12 +84,13 @@ text-align:center
 .img-right
 {
 float:right;
+margin-left: 400px
 }
 
 .img-left
 {
 float:left;
-margin-right: 16px
+margin-right: px
 }
 
 .textleft
